@@ -14,7 +14,7 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/mainthread', function (req, res) {
-  res.send('this will be served');
+  res.sendFile(path.join(__dirname, 'ui', 'mainthread.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
